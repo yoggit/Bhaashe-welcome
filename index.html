@@ -134,6 +134,11 @@
   .lcard .counts{font-size:13px; color:var(--ink-soft);}
 
   .features{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+  .stats-row{display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:26px;}
+  .stats-row .stat{background:var(--card); border:1px solid var(--line-2); border-radius:16px;
+    padding:14px 22px; text-align:center; box-shadow:var(--shadow); min-width:118px;}
+  .stats-row .stat b{display:block; font-size:26px; color:var(--accent); line-height:1.15;}
+  .stats-row .stat span{font-size:12.5px; color:var(--muted);}
   .fcard{background:var(--card); border:1px solid var(--line-2); border-radius:18px; padding:20px;
     box-shadow:var(--shadow);}
   .fcard .ic{font-size:24px;} .fcard h3{margin:10px 0 6px; font-size:17px;}
@@ -246,6 +251,31 @@
 
 <hr class="divider">
 
+<section id="strokes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The part that took longest</div>
+      <h2 class="serif">Every letter, stroke by stroke</h2>
+      <p>Knowing what a letter looks like is not knowing how to write it. Bhaashe animates all
+      <b>151 letters</b> of three alphabets &mdash; <b>347 strokes</b> in total &mdash; each one
+      drawn in the order and the direction a hand actually moves.</p>
+    </div>
+    <div class="grid features">
+      <div class="fcard"><div class="ic">&#9654;&#65039;</div><h3>Watch it drawn</h3><p>The letter builds itself one stroke at a time, with an arrowhead showing which way the pen is going &mdash; then again, slower, as many times as a child wants.</p></div>
+      <div class="fcard"><div class="ic">&#128207;</div><h3>Read from a reference, not guessed</h3><p>Stroke count, order and direction are facts, and a shape does not reveal them. Every letter was taken from a source that states them, then checked &mdash; not inferred from how the glyph looks.</p></div>
+      <div class="fcard"><div class="ic">&#9999;&#65039;</div><h3>On the letter&rsquo;s own card</h3><p>&ldquo;How to write it&rdquo; sits under each letter in the alphabet, so writing is one tap from reading it &mdash; not a separate lesson somewhere else.</p></div>
+    </div>
+    <div class="stats-row">
+      <div class="stat"><b>151</b><span>letters drawn</span></div>
+      <div class="stat"><b>347</b><span>strokes</span></div>
+      <div class="stat"><b>3</b><span>alphabets</span></div>
+      <div class="stat"><b>&#8377;0</b><span>included</span></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
 <section id="why">
   <div class="wrap">
     <div class="sec-head">
@@ -255,7 +285,6 @@
     <div class="grid features">
       <div class="fcard"><div class="ic">&#128266;</div><h3>A real voice, or none</h3><p>Where a word has a recording it is a person saying it, credited by name. Where there is none, the card is simply quiet &mdash; nothing is faked with a robot voice.</p></div>
       <div class="fcard"><div class="ic">&#128220;</div><h3>Every poem cited</h3><p>Only out-of-copyright verse, with the poet, the book and a link to the scanned page it was checked against. If the age of a text cannot be established, it is not printed.</p></div>
-      <div class="fcard"><div class="ic">&#9999;</div><h3>Stroke order, drawn</h3><p>Letters animate stroke by stroke, in the order and direction they are actually written &mdash; taken from a reference, not guessed from the shape.</p></div>
       <div class="fcard"><div class="ic">&#127968;</div><h3>Screen time, your call</h3><p>Optional parental controls behind a PIN only you know, and a plain list of what was practised.</p></div>
       <div class="fcard"><div class="ic">&#128274;</div><h3>Private by default</h3><p>No ads, no third-party tracking, nothing sold. What your child practises stays in their own browser.</p></div>
       <div class="fcard"><div class="ic">&#9992;</div><h3>Works offline</h3><p>Add it to the home screen and it opens like an app, with or without a connection.</p></div>
